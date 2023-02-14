@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <!-- anything is in head is not visible. it is used for meta-tags and title -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <!-- CSS way 1: Style Tag
+    <style>
+        body{
+            color: red;
+        }
+    </style> -->
+    <!-- CSS way 3: external link -->
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Vijay's Component Library</h1>
+    <h1>Vijay's Component Library</h1> <!-- style="color: red;" -->
     <p>I want to make a library which will make all my projects look good and consistent.</p>
 
     <hr>
 
     <h2>@typography</h2>
 
+    <!-- Sementic HTML: Tags which makes sense to both developers and users. -->
     <h1>This is the biggest heading</h1>
     <h2>This is the second biggest</h2>
     <p>Let me show you the normal text. This is free flowing and will wrap at the end like a paragraph.</p>
     <small>This is relatively smaller text.</small>
-
+    <!-- something which takes entire row: is block element. 
+    something which takes only its own space: is an inline element. -->
     <hr>
 
     <h2>@container</h2>
@@ -95,6 +105,8 @@
     <hr>
 
     <h2>@section</h2>
+    <!-- If you have pieces of information which are of same theme but a disjoint little bit 
+        then you can use section -->
     <section>
         <h3>white section</h3>
         <p>This will have white background</p>
@@ -112,6 +124,7 @@
     <h2>@footer</h2>
     
     <footer>
+        <!-- In footer you should not use h1, h2 tags. So I am not using it here. Remember this -->
         <div>some small heading inside your footer</div>
         <ul>
             <li>social One</li>
@@ -119,9 +132,6 @@
             <li>social Three</li>
         </ul>
     </footer>
-
-    <!-- In footer you should not use h1, h2 tags. So I am not using it here. Remember this -->
-
 
 </body>
 </html>
