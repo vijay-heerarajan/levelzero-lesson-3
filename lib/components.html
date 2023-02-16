@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- anything is in head is not visible. it is used for meta-tags and title -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Library</title>
+    <!-- CSS way 1: Style Tag
+    <style>
+        body{
+            color: red;
+        }
+    </style> -->
+    <!-- CSS way 3: external link -->
+    <link href="/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Vijay's Component Library</h1>
+    <!-- style="color: red;" -->
+    <p>
+      I want to make a library which will make all my projects look good and
+      consistent.
+    </p>
+
+    <hr />
+
+    <h2>@typography</h2>
+
+    <!-- Sementic HTML: Tags which makes sense to both developers and users. -->
+    <h1>This is the biggest heading</h1>
+    <h2>This is the second biggest</h2>
+    <p>
+      Let me show you the normal text. This is free flowing and will wrap at the
+      end like a paragraph.
+    </p>
+    <p>This paragraph will have a <strong>bold</strong> text.</p>
+    <small>This is relatively smaller text.</small>
+    <!-- something which takes entire row: is block element. 
+    something which takes only its own space: is an inline element. -->
+    <hr />
+
+    <h2>@container</h2>
+
+    <h3>fluid container</h3>
+    <div class="container">
+      This is a fluid container and it will go till the end of the page.
+    </div>
+
+    <h3>center container</h3>
+    <div class="container container-center">
+      This is a centered container and it will go till the specified width
+    </div>
+
+    <hr />
+
+    <h2>@links</h2>
+
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
+
+    <hr />
+
+    <h2>@lists</h2>
+
+    <h3>unordered list</h3>
+    <p>This list will not have the bullet</p>
+
+    <ul class="list-non-bullet">
+      <li>Item One</li>
+      <li>Item Two</li>
+      <li>Item Three</li>
+    </ul>
+
+    <h3>unordered inline list</h3>
+
+    <ul class="list-non-bullet">
+      <li class="list-item-inline">Inline Item One</li>
+      <li class="list-item-inline">Inline Item Two</li>
+      <li class="list-item-inline">Inline Item Three</li>
+    </ul>
+
+    <h3>reverse ordered list</h3>
+
+    <ol reversed>
+      <li>milk</li>
+      <li>eggs</li>
+      <li>bread</li>
+    </ol>
+
+    <hr />
+
+    <h2>@nav</h2>
+
+    <nav class="navigation container">
+      <div class="nav-brand">iAmBrand</div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link link-active" href="/">home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/">products</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/">about</a>
+        </li>
+      </ul>
+    </nav>
+
+    <hr />
+
+    <h2>@header</h2>
+
+    <header class="hero">
+      <img class="hero-img" src="/images/hero.svg" />
+      <h1 class="hero-heading">
+        Vijay Kumar the <span class="heading-inverted">Web Developer</span>
+      </h1>
+    </header>
+
+    <hr />
+
+    <h2>@section</h2>
+    <!-- If you have pieces of information which are of same theme but a disjoint little bit 
+        then you can use section -->
+    <section class="section">
+      <div class="container container-center">
+        <h1>white section</h1>
+        <p>
+          MDN Web Docs, previously Mozilla Developer Network and formerly
+          Mozilla Developer Center, is a documentation repository and learning
+          resource for web developers. It was started by Mozilla in 2005 as a
+          unified place for documentation about open web standards, Mozilla's
+          own projects, and developer guides.
+        </p>
+      </div>
+    </section>
+
+    <section class="section ow">
+      <div class="container container-center">
+        <h1>off white section</h1>
+        <p>
+          MDN Web Docs, previously Mozilla Developer Network and formerly
+          Mozilla Developer Center, is a documentation repository and learning
+          resource for web developers. It was started by Mozilla in 2005 as a
+          unified place for documentation about open web standards, Mozilla's
+          own projects, and developer guides.
+        </p>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- you should follow a theme because your mind understand patterns, the more you use patterns the clearer 
+    it can segregate things. -->
+    <h2>@footer</h2>
+
+    <footer class="footer">
+      <!-- In footer you should not use h1, h2 tags. So I am not using it here. Remember this -->
+      <div class="footer-header">some small heading inside your footer</div>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+            <a class="link" href="/">social One</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="/">social Two</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="/">social Three</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
